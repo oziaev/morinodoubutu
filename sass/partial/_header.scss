@@ -1,0 +1,198 @@
+@use "_mixin" as m;
+
+header {
+  width: 100%;
+  height: 96px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba($color: #f5f5f5, $alpha: 0.8);
+  padding-inline: m.$padding;
+  transition: top 0.3s ease;
+  z-index: 999;
+
+  @include m.sp-450 {
+    height: 56px;
+  }
+
+  .logo {
+    width: 250px;
+
+    @include m.sp-450 {
+      width: 200px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  nav {
+    font-size: 0.68rem;
+    z-index: 99;
+
+    ul {
+      display: flex;
+
+      li {
+        margin-left: 20px;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    @include m.tab {
+      width: 100%;
+      height: 100vh;
+      font-size: 0.98rem;
+      position: fixed;
+      top: 0;
+      right: 0;
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: 0.8s ease;
+      text-align: center;
+      padding: m.$bottom m.$bottom-sp;
+
+      ul {
+        flex-direction: column;
+
+        li {
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+
+  .toggle {
+    width: 50px;
+    height: 30px;
+    display: none;
+
+    @include m.tab {
+      display: block;
+      transition: 0.3s ease;
+      cursor: pointer;
+      position: relative;
+      z-index: 99;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      span {
+        width: 100%;
+        height: 1px;
+        display: block;
+        background-color: m.$font-color;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        transition: 0.3s ease;
+      }
+    }
+  }
+
+  .mask {
+    display: none;
+    opacity: 0;
+    transition: 0.8s ease;
+
+    @include m.tab {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      background-color: m.$main-color;
+      position: fixed;
+      top: 0;
+      right: 0;
+      transform: translateY(-100%);
+      z-index: 90;
+    }
+  }
+
+  &.open {
+    nav {
+      opacity: 1;
+      transform: translateY(0);
+      overflow: auto;
+      overscroll-behavior: contain;
+
+      ul {
+        li {
+          animation: fadeIn 1.2s forwards;
+
+          &:nth-child(1) {
+            animation-delay: 0.5s;
+          }
+          &:nth-child(2) {
+            animation-delay: 0.6s;
+          }
+          &:nth-child(3) {
+            animation-delay: 0.7s;
+          }
+          &:nth-child(4) {
+            animation-delay: 0.8s;
+          }
+          &:nth-child(5) {
+            animation-delay: 0.9s;
+          }
+          &:nth-child(6) {
+            animation-delay: 1s;
+          }
+          &:nth-child(7) {
+            animation-delay: 1.1s;
+          }
+          &:nth-child(8) {
+            animation-delay: 1.2s;
+          }
+          &:nth-child(9) {
+            animation-delay: 1.3s;
+          }
+          &:nth-child(10) {
+            animation-delay: 1.4s;
+          }
+        }
+      }
+    }
+
+    .toggle {
+      height: 80px;
+      margin: 50px 0 0 0;
+
+      span:nth-of-type(1) {
+        transform: translateY(-150%) rotate(315deg);
+        top: 60%;
+      }
+      span:nth-of-type(2) {
+        transform: translateY(-150%) rotate(-315deg);
+        top: 60%;
+      }
+    }
+
+    .mask {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

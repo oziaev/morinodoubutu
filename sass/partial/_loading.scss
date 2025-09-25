@@ -1,0 +1,62 @@
+@use "_mixin" as m;
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fad3c5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // animation: fadeUp 1s ease forwards;
+  // animation-delay: 2.5s; /* アニメーション終わってから消える */
+  z-index: 9999;
+
+  .paws {
+    display: flex;
+    gap: 20px;
+
+    .paw {
+      width: 60px;
+      opacity: 0.8;
+      transform: translateY(0);
+      animation: bounce .6s ease;
+    }
+    .paw1 {
+      animation-delay: 0s;
+    }
+    .paw2 {
+      animation-delay: 0.3s;
+    }
+    .paw3 {
+      animation-delay: 0.6s;
+    }
+  }
+}
+
+.fade-up {
+  animation: fadeUp 1s ease forwards;
+}
+
+
+/* ピョコっとする動き */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-20px); }
+  60%  { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px); /* 上にふわっと消える */
+  }
+}

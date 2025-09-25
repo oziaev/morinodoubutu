@@ -1,0 +1,154 @@
+@use "_mixin" as m;
+
+.form {
+  padding-top: 144px;
+  margin-bottom: m.$bottom;
+  position: relative;
+
+  .section-title {
+    text-align: center;
+  }
+
+  .form-inner {
+    background-color: #ffffff;
+    border: 0.5px solid m.$font-color;
+    border-radius: 30px;
+    box-shadow: m.$shadow;
+    padding: 32px 48px;
+    margin-bottom: 32px;
+
+    .group {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      @include m.sp {
+        flex-direction: column;
+      }
+
+      .inquiry_type {
+        width: 300px;
+        color: m.$font-color;
+        border: 0.5px solid m.$font-color;
+        border-radius: 10px;
+        cursor: pointer;
+        appearance: auto;
+        padding: 10px;
+
+        @include m.tab {
+          width: 200px;
+        }
+      }
+
+      label {
+        width: 30%;
+
+        @include m.sp {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+
+        span {
+          display: inline-block;
+          color: red;
+        }
+      }
+
+      .input-area {
+        width: 70%;
+
+        @include m.sp {
+          width: 100%;
+        }
+
+        .form-input,
+        .form-textarea,
+        .form-email,
+        .form-tel {
+          width: 95%;
+          color: m.$font-color;
+          background-color: #f5f5f5;
+          border-radius: 10px;
+          padding: 10px;
+
+          @include m.sp {
+            width: 100%;
+          }
+
+          &::placeholder {
+            color: m.$font-color;
+            opacity: 0.5;
+          }
+        }
+
+        .form-textarea {
+          height: 100px;
+        }
+      }
+
+      .name,
+      .age {
+        display: flex;
+        justify-content: space-between;
+
+        .form-input {
+          width: 90%;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .animal-name,
+      .animal-type {
+        .form-input {
+          width: 95%;
+          @include m.tab {
+            width: 100%;
+          }
+        }
+      }
+
+      .gender {
+        label {
+          cursor: pointer;
+          
+          span {
+            color: m.$font-color;
+          }
+        }
+
+        .form-input {
+          width: auto;
+        }
+      }
+
+      .resume {
+        .form-input {
+          max-width: 300px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .form-actions {
+    text-align: center;
+  }
+
+  .back {
+    position: absolute;
+    right: 10%;
+    transition: 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    img {
+      width: 13px;
+      margin-left: 5px;
+    }
+  }
+}

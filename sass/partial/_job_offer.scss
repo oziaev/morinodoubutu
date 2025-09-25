@@ -1,0 +1,150 @@
+@use "_mixin" as m;
+
+.job_offer {
+  background-color: #fffdfa;
+  position: relative;
+  padding-top: m.$bottom;
+  margin-bottom: 200px;
+
+  .section-title {
+    text-align: center;
+    margin-bottom: m.$bottom;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: m.$bottom-sp;
+  }
+
+  .wrapper {
+    text-align: center;
+
+    .accordion {
+      
+      .item {
+        width: 100%;
+        text-align: left;
+        border-left: 2px solid m.$main-color;
+        padding-left: 16px;
+        margin-bottom: m.$bottom-sp;
+
+        .title {
+          width: 100%;
+          position: relative;
+          font-size: 1.2rem;
+          transition: 0.3s ease;
+          border-bottom: 2px solid m.$main-color;
+          padding-block: 16px;
+
+          @include m.sp {
+            text-align: left;
+          }
+
+          @include m.sp-450 {
+            font-size: 1rem;
+          }
+
+          span {
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+
+            @include m.sp-450 {
+              right: 10px;
+            }
+          }
+
+          &:hover {
+            opacity: .8;
+          }
+        }
+
+        .content {
+          width: 100%;
+          display: none;
+          border-bottom: 2px solid m.$main-color;
+          padding: 16px 32px;
+          margin-top: 16px;
+
+          dl {
+            display: flex;
+            flex-wrap: wrap;
+
+            dt {
+              width: 15%;
+              line-height: 28px;
+              margin-bottom: 32px;
+            }
+            
+            dd {
+              width: 85%;
+              line-height: 28px;
+              margin-bottom: 32px;
+              position: relative;
+
+              &::before {
+                content: "：";
+                position: absolute;
+                left: -20px;
+              }
+
+              span {
+                font-size: .78rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .svg-top {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+    z-index: -10;
+
+    @include m.tab {
+      top: -160px;
+    }
+
+    @include m.sp {
+      top: -110px;
+    }
+
+    @include m.sp-500 {
+      top: -90px;
+    }
+
+    @include m.sp-450 {
+      top: -70px;
+    }
+  }
+
+  .svg-bottom {
+    position: absolute;
+    bottom: -220px;
+    left: 0;
+    right: 0;
+    rotate: 180deg;
+    z-index: -10;
+
+    @include m.tab {
+      bottom: -160px;
+    }
+
+    @include m.sp {
+      bottom: -110px;
+    }
+
+    @include m.sp-500 {
+      bottom: -90px;
+    }
+
+    @include m.sp-450 {
+      bottom: -70px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+//
+
+@use "partial/_loading.scss";
+
+// 全ページ
+// 共通
+@use "partial/_mixin.scss";
+@use "partial/_common.scss";
+@use "partial/_header.scss";
+@use "partial/_footer.scss";
+
+// トップページセクション
+@use "partial/_mainvisual.scss";
+@use "partial/_news.scss";
+@use "partial/_about.scss";
+@use "partial/_calendar.scss";
+
+// 固定ページ--------------------
+
+// スタッフページ
+@use "partial/_staff.scss";
+@use "partial/_job_offer.scss";
+
+// 応募フォーム
+@use "partial/_form.scss";
+
+// 共通セクション
+@use "partial/_service-top.scss";
+@use "partial/_plan.scss";
+@use "partial/_information.scss";
+
+// 保護活動ページのみ
+// セクション
+@use "partial/_wanted.scss";
+@use "partial/_support.scss";
+
+// 寄付ページ
+@use "partial/_support-fixed_page.scss";
+@use "partial/_method.scss";
+
+// ---------------------------

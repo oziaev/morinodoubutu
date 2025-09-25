@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mori no Doubutsu Hospital</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kiwi+Maru&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ress@4.0.0/dist/ress.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="loading" class="loading">
+      <div class="paws">
+        <img src="img/logo-paw.svg" alt="paw" class="paw paw1" />
+        <img src="img/logo-paw.svg" alt="paw" class="paw paw2" />
+        <img src="img/logo-paw.svg" alt="paw" class="paw paw3" />
+      </div>
+    </div>
+
+    <header>
+      <h1>
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" />
+        </a>
+      </h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="index.html#about">診療案内</a></li>
+          <li><a href="trimming.html">トリミング</a></li>
+          <li><a href="hotel.html">ペットホテル</a></li>
+          <li><a href="training.html">ドッグトレーニング</a></li>
+          <li><a href="rescue.html">保護活動</a></li>
+          <li><a href="staff.html">スタッフ紹介</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><img src="img/logo-phone.svg" /></li>
+        </ul>
+      </nav>
+
+      <div class="toggle">
+        <p>MENU</p>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="mask"></div>
+    </header>
+
+    <main>
+      <div class="mainvisual">
+        <img src="img/mainvisual.png" alt="" />
+
+        <div class="text">
+          <h2>小さな命に、大きなやさしさを。</h2>
+          <h3>もりのどうぶつ病院は、あなたと共に歩みます。</h3>
+        </div>
+
+        <div class="reception_wrapper">
+          <h3 class="title">診療・サービス受付時間</h3>
+
+          <table class="reception_time">
+            <tr>
+              <th></th>
+              <th></th>
+              <th>月</th>
+              <th>火</th>
+              <th>水</th>
+              <th>木</th>
+              <th>金</th>
+              <th>土</th>
+              <th>日</th>
+              <th>祝</th>
+            </tr>
+
+            <tr>
+              <th>診療</th>
+              <th>9:00 ~ 12:00<br />6:00 ~ 19:00</th>
+              <td>●</td>
+              <td>●</td>
+              <td>▲</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>▲</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <th>ペットホテル</th>
+              <th>24時間受付</th>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+            </tr>
+
+            <tr>
+              <th>トリミング</th>
+              <th>9:00 ~ 19:00</th>
+              <td>●</td>
+              <td>●</td>
+              <td></td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <th>しつけ教室</th>
+              <th>14:00 ~ 19:00<br />内で要相談</th>
+              <td></td>
+              <td></td>
+              <td>●</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>●</td>
+              <td></td>
+            </tr>
+          </table>
+
+          <div class="reception-text">
+            <p>▲ 午後休診</p>
+            <p>臨時休診等は公式LINEからお知らせいたします。</p>
+          </div>
+        </div>
+      </div>
+
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-title">
+            <h2>もりのどうぶつ病院について</h2>
+            <p>
+              病気の治療だけでなく、しつけや日常のケアまで。<br />
+              私たちは、動物と人がもっと仲良く暮らせるお手伝いをしています。
+            </p>
+          </div>
+        </div>
+
+        <!-- ページリンク -------------------------------------------->
+        <div class="service">
+          <div class="content">
+            <h3>サービス <span>〜 SERVICE 〜</span></h3>
+            <img src="img/service.png" class="img" />
+
+            <ul class="items">
+              <li class="item">
+                <a href="trimming.html">
+                  <img src="img/about-1.png" alt="" />
+                  <p class="text-1">トリミング</p>
+                  <p class="text-2">trimming</p>
+                </a>
+              </li>
+
+              <li class="item">
+                <a href="hotel.html">
+                  <img src="img/about-2.png" alt="" />
+                  <p class="text-1">ペットホテル</p>
+                  <p class="text-2">hotel</p>
+                </a>
+              </li>
+
+              <li class="item">
+                <a href="training.html">
+                  <img src="img/about-3.png" alt="" />
+                  <p class="text-1">ドッグトレーニング</p>
+                  <p class="text-2">training</p>
+                </a>
+              </li>
+
+              <li class="item">
+                <a href="rescue.html">
+                  <img src="img/about-4.png" alt="" />
+                  <p class="text-1">保護活動</p>
+                  <p class="text-2">rescue</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 診療科目 ---------------------------------------------------->
+        <div class="medical_care_subjects">
+          <div class="background">
+            <h3>診療科目 <span>〜 SUBJECTS 〜</span></h3>
+            <div class="container">
+              <div class="subjects_pc">
+                <dl class="item">
+                  <dt>
+                    <img src="img/subjects-1.png" alt="" />
+                    一般診療（内科・外科）
+                  </dt>
+                  <dd>
+                    発熱・食欲不振・咳など、日常的な体調不良やケガの処置などに対応します。
+
+                    <ul class="detail">
+                      <li>風邪</li>
+                      <li>嘔吐、下痢</li>
+                      <li>誤飲</li>
+                      <li>ケガ</li>
+                      <li>避妊、去勢手術 など</li>
+                    </ul>
+                  </dd>
+                </dl>
+
+                <dl class="item">
+                  <dt>
+                    <img src="img/subjects-2.png" alt="" />
+                    歯科
+                  </dt>
+                  <dd>
+                    お口のニオイや歯の汚れ、歯ぐきの腫れなどが気になるときに。
+
+                    <ul class="detail">
+                      <li>歯磨きのご相談</li>
+                      <li>歯石</li>
+                      <li>口内炎</li>
+                      <li>口臭</li>
+                      <li>食べにくさ など</li>
+                    </ul>
+                  </dd>
+                </dl>
+
+                <dl class="item">
+                  <dt>
+                    <img src="img/subjects-3.png" alt="" />
+                    循環器科
+                  </dt>
+                  <dd>
+                    心臓や血管の病気は、早期発見がとても大切です。レントゲンやエコー検査での、心臓の健康をしっかりチェックします。
+
+                    <ul class="detail">
+                      <li>心臓病（僧帽弁閉鎖不全症など）</li>
+                      <li>高血圧</li>
+                      <li>不整脈 など</li>
+                    </ul>
+                  </dd>
+                </dl>
+
+                <dl class="item">
+                  <dt>
+                    <img src="img/subjects-4.png" alt="" />
+                    眼科
+                  </dt>
+                  <dd>
+                    目やに・充血・涙が多いなど、見た目で気づきやすい症状にも丁寧に対応します。目のトラブルは進行が早いため、早めの受診をおすすめします。
+
+                    <ul class="detail">
+                      <li>結膜炎</li>
+                      <li>角膜炎</li>
+                      <li>白内障</li>
+                      <li>涙やけ など</li>
+                    </ul>
+                  </dd>
+                </dl>
+
+                <dl class="item">
+                  <dt>
+                    <img src="img/subjects-5.png" alt="" />
+                    予防医療
+                  </dt>
+                  <dd>
+                    フィラリアやノミ・ダニの予防、混合ワクチン接種など、年間を通してサポートいたします。
+
+                    <ul class="detail">
+                      <li>ワクチン接種</li>
+                      <li>フィラリア予防</li>
+                      <li>ノミ・ダニ対策</li>
+                      <li>狂犬病予防接種 など</li>
+                    </ul>
+                  </dd>
+                </dl>
+
+                <dl class="item">
+                  <dt>
+                    <img src="img/subjects-6.png" alt="" />
+                    健康診断
+                  </dt>
+                  <dd>
+                    年齢に応じた定期的な健康チェックで、病気の早期発見・予防をサポート。血液検査や画像診断を用いて、体の内側までしっかりチェックします。
+
+                    <ul class="detail">
+                      <li>シニアケア</li>
+                      <li>血液検査</li>
+                      <li>画像診断 など</li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+              <!-- ----------------------------------------------------- -->
+              <div class="accordion">
+                <div class="item">
+                  <button class="title">
+                    <img src="img/subjects-1.png" alt="" />
+                    一般診療（内科・外科）<span>＋</span>
+                  </button>
+
+                  <div class="content">
+                    <p>
+                      発熱・食欲不振・咳など、日常的な体調不良やケガの処置などに対応します。
+                    </p>
+                    <ul class="detail">
+                      <li>風邪</li>
+                      <li>嘔吐、下痢</li>
+                      <li>誤飲</li>
+                      <li>ケガ</li>
+                      <li>避妊、去勢手術 など</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <button class="title">
+                    <img src="img/subjects-2.png" alt="" />
+                    歯科<span>＋</span>
+                  </button>
+
+                  <div class="content">
+                    <p>
+                      お口のニオイや歯の汚れ、歯ぐきの腫れなどが気になるときに。
+                    </p>
+                    <ul class="detail">
+                      <li>歯磨きのご相談</li>
+                      <li>歯石</li>
+                      <li>口内炎</li>
+                      <li>口臭</li>
+                      <li>食べにくさ など</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <button class="title">
+                    <img src="img/subjects-3.png" alt="" />
+                    循環器科<span>＋</span>
+                  </button>
+
+                  <div class="content">
+                    <p>
+                      心臓や血管の病気は、早期発見がとても大切です。レントゲンやエコー検査での、心臓の健康をしっかりチェックします。
+                    </p>
+                    <ul class="detail">
+                      <li>心臓病（僧帽弁閉鎖不全症など）</li>
+                      <li>高血圧</li>
+                      <li>不整脈 など</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <button class="title">
+                    <img src="img/subjects-4.png" alt="" />
+                    眼科<span>＋</span>
+                  </button>
+
+                  <div class="content">
+                    <p>
+                      目やに・充血・涙が多いなど、見た目で気づきやすい症状にも丁寧に対応します。目のトラブルは進行が早いため、早めの受診をおすすめします。
+                    </p>
+                    <ul class="detail">
+                      <li>結膜炎</li>
+                      <li>角膜炎</li>
+                      <li>白内障</li>
+                      <li>涙やけ など</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <button class="title">
+                    <img src="img/subjects-5.png" alt="" />
+                    予防医療<span>＋</span>
+                  </button>
+
+                  <div class="content">
+                    <p>
+                      フィラリアやノミ・ダニの予防、混合ワクチン接種など、年間を通してサポートいたします。
+                    </p>
+                    <ul class="detail">
+                      <li>ワクチン接種</li>
+                      <li>フィラリア予防</li>
+                      <li>ノミ・ダニ対策</li>
+                      <li>狂犬病予防接種 など</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <button class="title">
+                    <img src="img/subjects-6.png" alt="" />
+                    健康診断<span>＋</span>
+                  </button>
+
+                  <div class="content">
+                    <p>
+                      年齢に応じた定期的な健康チェックで、病気の早期発見・予防をサポート。血液検査や画像診断を用いて、体の内側までしっかりチェックします。
+                    </p>
+                    <ul class="detail">
+                      <li>シニアケア</li>
+                      <li>血液検査</li>
+                      <li>画像診断 など</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- ---------------------------------------- -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 診療動物 --------------------------------------------->
+        <div class="services">
+          <div class="container">
+            <div class="section-title">
+              <h3>診療動物<span>〜 ANIMALS 〜</span></h3>
+            </div>
+            <ul>
+              <li>
+                <h4>犬・猫</h4>
+                <div class="img-stack">
+                  <img src="img/animal-dogcat-1.png" alt="" />
+                  <img src="img/animal-dogcat-2.png" alt="" />
+                  <img src="img/animal-dogcat-3.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <h4>小動物</h4>
+                <div class="img-stack">
+                  <img src="img/animal-small-1.png" alt="" />
+                  <img src="img/animal-small-2.png" alt="" />
+                  <img src="img/animal-small-3.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <h4>爬虫類</h4>
+                <div class="img-stack">
+                  <img src="img/animal-reptiles-1.png" alt="" />
+                  <img src="img/animal-reptiles-2.png" alt="" />
+                  <img src="img/animal-reptiles-3.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <h4>エキゾチックアニマル</h4>
+                <div class="img-stack">
+                  <img src="img/animal-exotic-1.png" alt="" />
+                  <img src="img/animal-exotic-2.png" alt="" />
+                  <img src="img/animal-exotic-3.png" alt="" />
+                </div>
+              </li>
+            </ul>
+            <p>
+              ※一部の動物は対応できないこともありますので、事前にお電話でお問い合わせいただけるとスムーズです。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ニュース -------------------------------------------------->
+      <section id="news" class="news">
+        <div class="container">
+          <article class="post">
+            <a href="news.html" class="item">
+              <ul class="article">
+                <li class="date">2025/08/01</li>
+                <li class="title">
+                  お盆期間中（8/13〜8/16）は午前のみの診療となります。
+                </li>
+              </ul>
+
+              <p class="next">お知らせ・ブログ一覧</p>
+            </a>
+          </article>
+        </div>
+      </section>
+      <!-- ------------------------------------------------------ -->
+
+      <!-- カレンダー ------------------------------------->
+      <section id="calendar" class="calendar">
+        <div class="container">
+          <div class="section-title">
+            <h2>お休みカレンダー</h2>
+          </div>
+
+          <div class="wrapper">
+            <div class="text">
+              <p class="no_consultation"><span></span>休診</p>
+              <p class="pm_no_consultation"><span></span>午後休診</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- 背景ウェーブ ------------------------------------------->
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <!-- 上の薄い波 -->
+          <path
+            fill="#DAE6D2"
+            fill-opacity=".7"
+            d="M0,160L80,138.7C160,117,320,75,480,85.3C640,96,800,160,960,202.7C1120,245,1280,267,1360,277.3L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+          <!-- 下の濃い波 -->
+          <path
+            fill="#DAE6D2"
+            fill-opacity="1"
+            d="M0,192L48,197.3C96,203,192,213,288,218.7C384,224,480,224,576,213.3C672,203,768,181,864,154.7C960,128,1056,96,1152,85.3C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+      <!-- ------------------------------------------------------- -->
+
+      <div class="container">
+        <a href="index.html" class="logo"><img src="img/logo.png" /></a>
+
+        <div class="footer-top">
+          <div class="info-left">
+            <div class="overview">
+              <h3>病院概要</h3>
+              <ul>
+                <li><a href="index.html#about">診療案内</a></li>
+                <li><a href="trimming.html">トリミング</a></li>
+                <li><a href="hotel.html">ペットホテル</a></li>
+                <li><a href="training.html">しつけ教室</a></li>
+                <li><a href="rescue.html">保護活動</a></li>
+                <li><a href="staff.html">スタッフ紹介</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+              </ul>
+            </div>
+
+            <div class="pey">
+              <h3>お支払い方法</h3>
+              <p>現金またはキャッシュレス決済</p>
+            </div>
+          </div>
+
+          <div class="info-right">
+            <div class="contact">
+              <h3>ご予約・お問い合わせ</h3>
+              <ul>
+                <li>
+                  <a href="tel:0000-00-0000">
+                    <img src="img/logo-phone.svg" alt="" />
+                    0000-00-0000
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <img src="img/logo-instagram.svg" alt="" />
+                    Instagram
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="img/logo-line.svg" alt="" />
+                    公式LINE
+                  </a>
+                  <p>※友だち追加して、いつでもご予約・お問い合わせOK！</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pay-insurance">
+              <div class="insurance">
+                <h3>取扱保険</h3>
+                <ul>
+                  <li>アニコム損害保険</li>
+                  <li>アイペット損害保険</li>
+                </ul>
+                <p>
+                  ※他の保険会社の場合は、飼い主様から直接、保険会社に請求いただきます。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="access">
+            <div class="access-inner">
+              <h3>アクセス</h3>
+
+              <div class="text">
+                <p class="address">
+                  〒799-1527<br />
+                  愛媛県今治市
+                </p>
+                <div class="text-inner">
+                  <img src="img/access-1.png" alt="" />
+                  <p class="car">駐車場10台完備</p>
+                </div>
+              </div>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26461.98548979339!2d133.00174055785976!3d33.99900123690735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35502fddd73428e1%3A0xc90e36833387efea!2z44CSNzk5LTE1Mjcg5oSb5aqb55yM5LuK5rK75biC6ZW35rKi!5e0!3m2!1sja!2sjp!4v1754034782455!5m2!1sja!2sjp"
+              width="600"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="careers-link">
+            <p>小さな命に寄り添うお仕事、始めませんか？</p>
+            <a href="staff.html#job_offer" class="btn">採用情報はこちら</a>
+          </div>
+
+          <div class="support-link">
+            <p>小さな命を守るために、あなたの力を貸してください。</p>
+            <a href="support.html" class="btn">寄付のお願いはこちら</a>
+          </div>
+        </div>
+
+        <div class="to-top">
+          <div class="inner">
+            <img src="img/logo-paw.svg" alt="" />
+            <p>top</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>&copy;Mori no Doubutsu Hospital</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

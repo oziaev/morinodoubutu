@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mori no Doubutsu Hospital</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kiwi+Maru&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ress@4.0.0/dist/ress.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" />
+        </a>
+      </h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="index.html#about">診療案内</a></li>
+          <li><a href="trimming.html">トリミング</a></li>
+          <li><a href="hotel.html">ペットホテル</a></li>
+          <li><a href="training.html">ドッグトレーニング</a></li>
+          <li><a href="rescue.html">保護活動</a></li>
+          <li><a href="staff.html">スタッフ紹介</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><img src="img/logo-phone.svg" /></li>
+        </ul>
+      </nav>
+
+      <div class="toggle">
+        <p>MENU</p>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="mask"></div>
+    </header>
+
+    <!-- top-------------------------------------------- -->
+    <main>
+      <div class="rescue">
+
+      <img src="img/rescue-mainvisual.png" class="mainvisual" />
+
+      <div class="service-top container">
+        <div class="title">
+          <h2>保護活動</h2>
+          <img src="img/title.png" alt="" />
+        </div>
+
+        <div class="text">
+            <p class="text-1">小さないのちを、未来へつなぐ。</p>
+            <p class="text-2">
+              行き場をなくした動物たちに寄り添い、新しい家族との出会いをサポートしています。ひとつでも多くのいのちが幸せに暮らせるよう『保護』と『譲渡』そして日々のケアに取り組んでいます。<br />
+              「里親になる」という選択肢が、小さないのちを救う力になります。
+            </p>
+        </div>
+
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#DAE6D2"
+            d="M37.2,-63.2C49.7,-57.2,62.3,-50.2,72.3,-39.5C82.3,-28.8,89.6,-14.4,86.2,-2C82.8,10.5,68.7,21,59.8,33.6C50.9,46.2,47.3,60.9,38.2,67.3C29.1,73.8,14.5,71.9,1.7,68.9C-11.1,66,-22.3,61.9,-33.9,57C-45.6,52,-57.9,46.3,-63.4,36.6C-68.9,27,-67.7,13.5,-67.3,0.2C-66.9,-13,-67.4,-26.1,-62.4,-36.7C-57.4,-47.2,-47,-55.3,-35.7,-62C-24.4,-68.7,-12.2,-74,0.1,-74.1C12.3,-74.2,24.7,-69.2,37.2,-63.2Z"
+            transform="translate(100 100)">
+            <animate
+              attributeType="XML"
+              attributeName="d"
+              dur="15s"
+              repeatCount="indefinite"
+              values="
+                            M37.2,-63.2C49.7,-57.2,62.3,-50.2,72.3,-39.5C82.3,-28.8,89.6,-14.4,86.2,-2C82.8,10.5,68.7,21,59.8,33.6C50.9,46.2,47.3,60.9,38.2,67.3C29.1,73.8,14.5,71.9,1.7,68.9C-11.1,66,-22.3,61.9,-33.9,57C-45.6,52,-57.9,46.3,-63.4,36.6C-68.9,27,-67.7,13.5,-67.3,0.2C-66.9,-13,-67.4,-26.1,-62.4,-36.7C-57.4,-47.2,-47,-55.3,-35.7,-62C-24.4,-68.7,-12.2,-74,0.1,-74.1C12.3,-74.2,24.7,-69.2,37.2,-63.2Z;
+                            M39.2,-67.6C53.4,-59.8,69.2,-54.4,76.2,-43.6C83.2,-32.7,81.4,-16.4,79,-1.4C76.6,13.6,73.7,27.2,68,40.4C62.4,53.6,54,66.3,42.2,72.1C30.4,77.8,15.2,76.4,0,76.4C-15.2,76.5,-30.5,77.8,-44.9,73.6C-59.3,69.4,-72.9,59.6,-80.9,46.5C-88.9,33.3,-91.4,16.6,-88.8,1.5C-86.2,-13.6,-78.5,-27.3,-70.9,-41.1C-63.3,-55,-55.6,-69.1,-43.8,-78.2C-32,-87.4,-16,-91.6,-1.7,-88.6C12.5,-85.6,25.1,-75.4,39.2,-67.6Z;
+                            M45.9,-80.1C58.6,-72.3,67.3,-58.1,74,-43.6C80.7,-29.2,85.4,-14.6,85.7,0.2C86.1,15,82,30,74.3,42.7C66.6,55.4,55.3,65.9,42.4,73.7C29.4,81.6,14.7,86.9,-0.9,88.5C-16.6,90.1,-33.2,88.2,-46.8,80.7C-60.4,73.2,-71.1,60.2,-78.5,45.8C-86,31.5,-90.2,15.7,-90,0.1C-89.8,-15.5,-85.1,-31,-76.9,-44.1C-68.8,-57.1,-57,-67.8,-43.6,-75.3C-30.2,-82.7,-15.1,-87,0.8,-88.3C16.6,-89.6,33.3,-88,45.9,-80.1Z;
+                            M44.3,-76.3C58,-68.9,70.1,-58.2,75.4,-44.9C80.6,-31.6,79.1,-15.8,75.2,-2.2C71.3,11.3,65.1,22.7,60.2,36.4C55.2,50.1,51.3,66.2,41.5,72.5C31.7,78.7,15.8,75.2,1.7,72.2C-12.4,69.2,-24.7,66.7,-35.9,61.2C-47.2,55.8,-57.3,47.3,-64.6,36.6C-72,25.9,-76.6,13,-78.3,-1C-80,-14.9,-78.8,-29.9,-70.6,-39C-62.3,-48.2,-47,-51.5,-34.1,-59.4C-21.1,-67.3,-10.6,-79.8,2.4,-83.9C15.3,-88,30.6,-83.8,44.3,-76.3Z;
+                            M47.1,-80.7C61.2,-73.4,73,-61.2,78.1,-46.9C83.2,-32.6,81.6,-16.3,79.6,-1.2C77.6,14,75.2,28,69.9,42C64.7,56,56.6,70,44.5,77.7C32.3,85.5,16.2,87,-0.2,87.3C-16.6,87.7,-33.2,86.9,-46.2,79.7C-59.3,72.5,-68.8,58.9,-76.9,44.5C-85.1,30.1,-91.9,15.1,-90.6,0.7C-89.4,-13.7,-80.2,-27.3,-71.8,-41.3C-63.4,-55.3,-55.9,-69.6,-44.1,-78.2C-32.3,-86.9,-16.2,-89.8,0.2,-90.1C16.5,-90.4,33,-88,47.1,-80.7Z;
+                            M45.4,-78.5C59.6,-70.5,72.3,-59.8,81.2,-46.3C90,-32.7,95,-16.4,93.9,-0.6C92.9,15.2,85.9,30.4,76.9,43.5C67.8,56.7,56.7,67.9,43.6,73.4C30.5,78.9,15.2,78.6,0.1,78.4C-15,78.2,-30,78,-43.1,72.5C-56.2,67,-67.4,56.2,-72.6,43.3C-77.8,30.3,-76.8,15.1,-77.7,-0.5C-78.7,-16.2,-81.5,-32.4,-75.9,-44.6C-70.3,-56.8,-56.3,-65,-42.2,-73.1C-28.2,-81.2,-14.1,-89.1,0.8,-90.4C15.6,-91.8,31.2,-86.5,45.4,-78.5Z;
+                            M37.2,-63.2C49.7,-57.2,62.3,-50.2,72.3,-39.5C82.3,-28.8,89.6,-14.4,86.2,-2C82.8,10.5,68.7,21,59.8,33.6C50.9,46.2,47.3,60.9,38.2,67.3C29.1,73.8,14.5,71.9,1.7,68.9C-11.1,66,-22.3,61.9,-33.9,57C-45.6,52,-57.9,46.3,-63.4,36.6C-68.9,27,-67.7,13.5,-67.3,0.2C-66.9,-13,-67.4,-26.1,-62.4,-36.7C-57.4,-47.2,-47,-55.3,-35.7,-62C-24.4,-68.7,-12.2,-74,0.1,-74.1C12.3,-74.2,24.7,-69.2,37.2,-63.2Z;
+                            " />
+          </path>
+        </svg>
+        
+        <a href="#plan" class="btn">活動内容</a>
+      </div>
+      <!-- ----------------------------------------------------- -->
+
+      <!-- プラン------------------------------------------------- -->
+      <section id="plan" class="container plan work">
+        <div class="section-title">
+          <h2>活動内容</h2>
+        </div>
+
+        <div class="content">
+          <div class="item left">
+            <img src="img/rescue-work-1.png" class="img" />
+            <div class="text">
+              <p class="inner-1">1. 小さな命との出会い</p>
+              <p class="inner-2">
+                ある日、ひとりぼっちでうずくまっていた子。<br />
+                迷子かもしれない。捨てられたのかもしれない。
+                そんな子に、もう一度「守られる場所」を届けたい。<br />
+                地域の方からの通報や、行政・保護団体との連携により、
+                保護の第一歩がはじまります。
+              </p>
+            </div>
+          </div>
+
+          <div class="item right">
+            <div class="text">
+              <p class="inner-1">2. 命を守るケア</p>
+              <p class="inner-2">
+                保護された子たちは、まず獣医師の診察を受け、健康状態をしっかり確認。<br />
+                必要な医療を行い、体だけでなく心も整えていきます。新しい場所に慣れるまで、やさしく、丁寧に。<br />
+                その子のペースを大切にしたケアを心がけています。
+              </p>
+            </div>
+            <img src="img/rescue-work-2.png" class="img" />
+          </div>
+
+          <div class="item left">
+            <img src="img/rescue-work-3.png" class="img" />
+
+            <div class="text">
+              <p class="inner-1">3. ずっとの家族を探して</p>
+              <p class="inner-2">
+                「どんな家族なら、この子が安心して暮らせるだろう？」<br />
+                性格や生活リズムを見ながら、ぴったりのご家族をおつなぎします。譲渡はゴールではなく、新たなスタート。<br />
+                その先も、見守りとサポートを続けています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- --------------------------------------------------------- -->
+
+      <!-- 家族募集--------------------------------------------- -->
+      <section id="wanted" class="wanted">
+        <div class="container">
+          <div class="section-title">
+            <h2>家族募集中</h2>
+          </div>
+
+          <ul class="wanted-list">
+            <li>
+              <!-- フェードイン -------------------------------------- -->
+              <img src="img/rescue-wanted-1.png" class="img" />
+              <!-- -------------------------------------- -->
+
+              <div class="text">
+                <p class="status">
+                  ステータス
+                  <span>トライアル中</span>
+                </p>
+
+                <dl>
+                  <dt>名前:</dt>
+                  <dd>メイ（仮）</dd>
+
+                  <dt>性別:</dt>
+                  <dd>女の子</dd>
+
+                  <dt>年齢:</dt>
+                  <dd>２歳（推定）</dd>
+
+                  <dt>性格:</dt>
+                  <dd>おっとりマイペースの甘えん坊</dd>
+                </dl>
+              </div>
+            </li>
+
+            <li>
+              <img src="img/rescue-wanted-2.png" class="img" />
+
+              <div class="text">
+                <p class="status">
+                  ステータス
+                  <span>トライアル中</span>
+                </p>
+
+                <dl>
+                  <dt>名前:</dt>
+                  <dd>メイ（仮）</dd>
+
+                  <dt>性別:</dt>
+                  <dd>女の子</dd>
+
+                  <dt>年齢:</dt>
+                  <dd>２歳（推定）</dd>
+
+                  <dt>性格:</dt>
+                  <dd>おっとりマイペースの甘えん坊</dd>
+                </dl>
+              </div>
+            </li>
+          </ul>
+
+          <a href="wanted-page.html" class="btn">もっと見る</a>
+
+        </div>
+      </section>
+      </div>
+      <!-- ------------------------------------------------------ -->
+
+      <!-- 支援-------------------------------------------- -->
+
+      <section id="support" class="support">
+        <!-- 背景ウェーブ -->
+        <svg
+          class="svg-top"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320">
+          <path
+            fill="#FFFDFA"
+            fill-opacity="1"
+            d="M0,96L48,90.7C96,85,192,75,288,96C384,117,480,171,576,192C672,213,768,203,864,192C960,181,1056,171,1152,176C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+        <!-- ---------- -->
+        <div class="container">
+          <div class="section-title">
+            <h2>あなたの力を、ちいさな命のために</h2>
+            <p>
+              私たちの保護活動は、地域の皆さまのあたたかなご支援に支えられています。<br />
+              一つひとつが、動物たちの「今」と「これから」に、確かな力を届けてくれます。
+            </p>
+          </div>
+
+          <ul>
+            <li>
+              <p class="title">物資のご支援</p>
+              <p class="text">
+                フード・ペットシーツ・毛布・タオルなど、日々使うものを募っています。
+              </p>
+            </li>
+
+            <li>
+              <p class="title">ご寄付のお願い</p>
+              <p class="text">
+                医療費や生活費として、大切に活用させていただきます。
+              </p>
+            </li>
+
+            <li>
+              <p class="title">ボランティア協力</p>
+              <p class="text">
+                掃除・お世話・一時預かり・搬送など、ご都合に合わせた関わり方が可能です。
+              </p>
+            </li>
+          </ul>
+
+          <a href="support.html" class="more">支援する</a>
+        </div>
+
+        <!-- 背景ウェーブ -->
+        <svg
+          class="svg-bottom"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320">
+          <path
+            fill="#FFFDFA"
+            fill-opacity="1"
+            d="M0,96L48,90.7C96,85,192,75,288,96C384,117,480,171,576,192C672,213,768,203,864,192C960,181,1056,171,1152,176C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+        <!-- ---------- -->
+      </section>
+      
+      <!-- ------------------------------------------------ -->
+
+      <!-- カレンダー ------------------------------------->
+      <section id="calendar" class="calendar">
+        <div class="container">
+          <div class="section-title">
+            <h2>お休みカレンダー</h2>
+          </div>
+
+          <div class="wrapper">
+            <div class="text">
+              <p class="no_consultation"><span></span>休診</p>
+              <p class="pm_no_consultation"><span></span>午後休診</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+
+        <!-- 背景ウェーブ ------------------------------------------->
+        <div class="wave">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <!-- 上の薄い波 -->
+            <path
+              fill="#DAE6D2"
+              fill-opacity=".7"
+              d="M0,160L80,138.7C160,117,320,75,480,85.3C640,96,800,160,960,202.7C1120,245,1280,267,1360,277.3L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+            <!-- 下の濃い波 -->
+            <path
+              fill="#DAE6D2"
+              fill-opacity="1"
+              d="M0,192L48,197.3C96,203,192,213,288,218.7C384,224,480,224,576,213.3C672,203,768,181,864,154.7C960,128,1056,96,1152,85.3C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+          </svg>
+        </div>
+        <!-- ------------------------------------------------------- -->
+      
+      <div class="container">
+        <a href="index.html" class="logo"><img src="img/logo.png" /></a>
+
+        <div class="footer-top">
+          <div class="info-left">
+            <div class="overview">
+              <h3>病院概要</h3>
+              <ul>
+                <li><a href="index.html#about">診療案内</a></li>
+                <li><a href="trimming.html">トリミング</a></li>
+                <li><a href="hotel.html">ペットホテル</a></li>
+                <li><a href="training.html">しつけ教室</a></li>
+                <li><a href="rescue.html">保護活動</a></li>
+                <li><a href="staff.html">スタッフ紹介</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+              </ul>
+            </div>
+
+            <div class="pey">
+              <h3>お支払い方法</h3>
+              <p>現金またはキャッシュレス決済</p>
+            </div>
+          </div>
+
+          <div class="info-right">
+            <div class="contact">
+              <h3>ご予約・お問い合わせ</h3>
+              <ul>
+                <li>
+                  <a href="tel:0000-00-0000">
+                    <img src="img/logo-phone.svg" alt="" />
+                    0000-00-0000
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <img src="img/logo-instagram.svg" alt="" />
+                    Instagram
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="img/logo-line.svg" alt="" />
+                    公式LINE
+                  </a>
+                  <p>※友だち追加して、いつでもご予約・お問い合わせOK！</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pay-insurance">
+              <div class="insurance">
+                <h3>取扱保険</h3>
+                <ul>
+                  <li>アニコム損害保険</li>
+                  <li>アイペット損害保険</li>
+                </ul>
+                <p>
+                  ※他の保険会社の場合は、飼い主様から直接、保険会社に請求いただきます。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="access">
+            <div class="access-inner">
+              <h3>アクセス</h3>
+
+              <div class="text">
+                <p class="address">
+                  〒799-1527<br />
+                  愛媛県今治市
+                </p>
+                <div class="text-inner">
+                  <img src="img/access-1.png" alt="" />
+                  <p class="car">駐車場10台完備</p>
+                </div>
+              </div>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26461.98548979339!2d133.00174055785976!3d33.99900123690735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35502fddd73428e1%3A0xc90e36833387efea!2z44CSNzk5LTE1Mjcg5oSb5aqb55yM5LuK5rK75biC6ZW35rKi!5e0!3m2!1sja!2sjp!4v1754034782455!5m2!1sja!2sjp"
+              width="600"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="careers-link">
+            <p>小さな命に寄り添うお仕事、始めませんか？</p>
+            <a href="staff.html#job_offer" class="btn">採用情報はこちら</a>
+          </div>
+
+          <div class="support-link">
+            <p>小さな命を守るために、あなたの力を貸してください。</p>
+            <a href="support.html" class="btn">寄付のお願いはこちら</a>
+          </div>
+        </div>
+
+        <div class="to-top">
+          <div class="inner">
+            <img src="img/logo-paw.svg" alt="" />
+            <p>top</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>&copy;Mori no Doubutsu Hospital</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

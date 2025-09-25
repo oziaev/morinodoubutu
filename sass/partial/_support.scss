@@ -1,0 +1,144 @@
+@use '_mixin' as m;
+
+.support {
+  text-align: center;
+  background-color: lighten(m.$base-color, 2);
+  position: relative;
+  padding-block: m.$bottom-sp;
+  margin-top: 80px;
+  margin-bottom: m.$bottom;
+
+  @include m.tab {
+    margin-top: 50px;
+    margin-bottom: m.$bottom-sp;
+  }
+
+  .svg-top {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+    z-index: -10;
+
+    @include m.tab {
+      top: -160px;
+    }
+
+    @include m.sp {
+      top: -110px;
+    }
+
+    @include m.sp-500 {
+      top: -90px;
+    }
+
+    @include m.sp-450 {
+      top: -70px;
+    }
+  }
+
+  .svg-bottom {
+    position: absolute;
+    bottom: -220px;
+    left: 0;
+    right: 0;
+    rotate: 180deg;
+    z-index: -10;
+
+    @include m.tab {
+      bottom: -160px;
+    }
+
+    @include m.sp {
+      bottom: -110px;
+    }
+
+    @include m.sp-500 {
+      bottom: -90px;
+    }
+
+    @include m.sp-450 {
+      bottom: -70px;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: m.$bottom-sp;
+
+    @include m.tab {
+      flex-direction: column;
+    }
+
+    li {
+      width: 280px;
+      border: 2px solid m.$accent-color;
+      border-radius: 30px;
+      padding: 24px 16px;
+
+      @include m.tab {
+        margin-inline: auto;
+        margin-bottom: 16px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .title {
+        width: 70%;
+        border-bottom: 1.5px solid m.$accent-color;
+        padding-bottom: 8px;
+        margin-bottom: 16px;
+        margin-inline: auto;
+      }
+
+      .text {
+        text-align: left;
+      }
+    }
+  }
+
+  .more {
+    width: 80px;
+    font-size: 1.2rem;
+    position: relative;
+
+    &::before {
+      width: 90%;
+      height: 1px;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      transition: .3s ease;
+      background-color: m.$font-color;
+    }
+
+    &::after {
+      width: 10px;
+      height: 1px;
+      content: "";
+      position: absolute;
+      bottom: -11.5px;
+      right: 6px;
+      background-color: m.$font-color;
+      transition: .3s ease;
+      rotate: -45deg;
+    }
+
+    &:hover {
+      opacity: .8;
+
+      &::before {
+        width: 100%;
+      }
+
+      &::after {
+        right: -1px;
+      }
+    }
+  }
+}
+

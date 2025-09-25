@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mori no Doubutsu Hospital</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kiwi+Maru&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ress@4.0.0/dist/ress.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" />
+        </a>
+      </h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="index.html#about">診療案内</a></li>
+          <li><a href="trimming.html">トリミング</a></li>
+          <li><a href="hotel.html">ペットホテル</a></li>
+          <li><a href="training.html">ドッグトレーニング</a></li>
+          <li><a href="rescue.html">保護活動</a></li>
+          <li><a href="staff.html">スタッフ紹介</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><img src="img/logo-phone.svg" /></li>
+        </ul>
+      </nav>
+
+      <div class="toggle">
+        <p>MENU</p>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="mask"></div>
+    </header>
+
+    <main>
+      <section id="staff" class="staff">
+        <div class="container">
+          <div class="section-title">
+            <h2>スタッフ紹介</h2>
+          </div>
+          <div class="doctors">
+            <div class="doctor doctor-left">
+              <img src="img/doctor-1.png" class="img" />
+              <div class="profile">
+                <p class="name">院長：大森 健一</p>
+                <p class="subjects">一般診療・循環器科</p>
+                <p class="introduction">
+                  長年にわたり地域の動物たちを見守ってきた、当院の院長。<br />
+                  確かな診療と温かい人柄で、飼い主さまからも厚い信頼を得ています。
+                  「動物たちの声なき声に耳を傾けること」をモットーに、日々の診療にあたっています。<br />
+                  趣味は釣りと盆栽。
+                </p>
+              </div>
+            </div>
+
+            <div class="doctor doctor-right">
+              <div class="profile">
+                <p class="name">副院長：大森 ひかり</p>
+                <p class="subjects">一般診療・眼科・予防医療</p>
+                <p class="introduction">
+                  院長の娘であり、優しく丁寧な診察が魅力の獣医師。<br />
+                  眼科診療を専門とし、目の不調や違和感にも的確に対応します。
+                  「一緒に暮らす動物たちの毎日が、少しでも快適になるように」と、飼い主さまと同じ目線に立つ診療を心がけています。<br />
+                  休日はカフェ巡りと読書が好き。
+                </p>
+              </div>
+              <img src="img/doctor-2.png" class="img" />
+            </div>
+
+            <div class="doctor doctor-left">
+              <img src="img/doctor-3.png" class="img" />
+              <div class="profile">
+                <p class="name">獣医師：佐々木 隼</p>
+                <p class="subjects">一般診療・歯科・健康診断</p>
+                <p class="introduction">
+                  動物の歯の健康を大切に考える、歯科を得意とする獣医師。<br />
+                  犬猫のデンタルケアについてわかりやすくアドバイスし、口腔ケアから健康を守ります。「何気ない不調のサインも見逃さない」を信条に、丁寧な問診と検査を大切にしています。<br />
+                  趣味はキャンプ。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="medical-staff">
+            <h3>ナース</h3>
+
+            <ul class="staff-slider">
+              <li class="profile">
+                <img src="img/medical-staff-1.png" alt="" />
+                <div class="text">
+                  <p class="name">動物看護師：大森 みなみ</p>
+                  <p class="rep">担当：看護・トリミング・ペットホテル全般</p>
+                  <p class="qualification">
+                    保有資格：認定動物看護師／トリマー2級／愛玩動物飼養管理士
+                  </p>
+                </div>
+                <p class="introduction">
+                  院長の娘で、看護からトリミング、ホテル管理まで幅広く担当しています。<br />
+                  動物たちの心に寄り添ったケアを大切にしており、「また会いたい」と思ってもらえるような接し方を心がけています。家では元保護犬と暮らしています。
+                </p>
+              </li>
+
+              <li class="profile">
+                <img src="img/medical-staff-2.png" alt="" />
+                <div class="text">
+                  <p class="name">動物看護師：村上 翔太</p>
+                  <p class="rep">担当：看護・検査・入院管理</p>
+                  <p class="qualification">
+                    保有資格：認定動物看護師／愛玩動物飼養管理士
+                  </p>
+                </div>
+                <p class="introduction">
+                  唯一の男性看護師で、力仕事や入院動物のサポートなど、頼れる存在。<br />
+                  繊細な子にもやさしく対応できる落ち着いた接し方に定評があります。
+                  大型犬から小動物まで幅広く対応。<br />
+                  意外とおしゃべり好き。
+                </p>
+              </li>
+
+              <li class="profile">
+                <img src="img/medical-staff-3.png" alt="" />
+                <div class="text">
+                  <p class="name">動物看護師：高橋 あかね</p>
+                  <p class="rep">担当：看護・受付・しつけ教室補助</p>
+                  <p class="qualification">
+                    保有資格：認定動物看護師／家庭犬しつけインストラクター
+                  </p>
+                </div>
+                <p class="introduction">
+                  受付で出迎える笑顔が印象的なスタッフ。<br />
+                  しつけ教室のサポートも行い、飼い主さまの不安や悩みに寄り添う存在として活躍しています。「病院＝こわくない場所」と思ってもらえるよう、雰囲気づくりにもこだわっています。
+                </p>
+              </li>
+
+              <li class="profile">
+                <img src="img/medical-staff-4.png" alt="" />
+                <div class="text">
+                  <p class="name">動物看護師：吉田 さくら</p>
+                  <p class="rep">担当：一般看護・手術補助・予防医療サポート</p>
+                  <p class="qualification">
+                    保有資格：認定動物看護師／動物栄養管理士
+                  </p>
+                </div>
+                <p class="introduction">
+                  明るく気配り上手なムードメーカー的存在。<br />
+                  入院中の子たちの細かな変化にも気づき、安心できる環境作りに力を入れています。飼い主さまとのコミュニケーションも大切にし、何でも相談しやすい雰囲気づくりを心がけています。
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-staff">
+            <h3>サービススタッフ</h3>
+
+            <ul class="staff-slider">
+              <li class="profile">
+                <img src="img/service-staff-1.png" alt="" />
+                <div class="text">
+                  <p class="name">大森 奈緒</p>
+                  <p class="rep">
+                    担当：しつけ教室／受付サポート／ペットホテル
+                  </p>
+                  <p class="qualification">
+                    資格：家庭犬しつけインストラクター／愛玩動物飼養管理士2級
+                  </p>
+                </div>
+                <p class="introduction">
+                  メッセージ：<br />
+                  「わんちゃんとの毎日が、もっと楽しくなるように。行動の背景にある“気持ち”に寄り添ったレッスンを心がけています。一緒に、小さな変化を楽しみましょう！」
+                </p>
+              </li>
+
+              <li class="profile">
+                <img src="img/service-staff-2.png" alt="" />
+                <div class="text">
+                  <p class="name">田中 理恵</p>
+                  <p class="rep">担当：ペットホテル／受付</p>
+                  <p class="qualification">資格：愛玩動物飼養管理士2級</p>
+                </div>
+                <p class="introduction">
+                  メッセージ：<br />
+                  「お預かりしている間も、おうちと同じように安心して過ごしてもらえるよう心を込めて接しています。お迎えの時に『楽しかったみたい』と言っていただけるのが一番の喜びです。」
+                </p>
+              </li>
+
+              <li class="profile">
+                <img src="img/service-staff-3.png" alt="" />
+                <div class="text">
+                  <p class="name">岡本 将暉</p>
+                  <p class="rep">担当：トリマー／雑務全般</p>
+                  <p class="qualification">資格：トリマーライセンス</p>
+                </div>
+                <p class="introduction">
+                  メッセージ：<br />
+                  「その子らしさが引き立つカットを心がけています。苦手な作業も無理なくできるよう、動物のペースに合わせた施術を大切にしています。」
+                </p>
+              </li>
+
+              <li class="profile">
+                <img src="img/service-staff-4.png" alt="" />
+                <div class="text">
+                  <p class="name">鈴木 涼介</p>
+                  <p class="rep">担当：ペットホテル／受付・事務</p>
+                  <p class="qualification">資格：愛玩動物飼養管理士2級</p>
+                </div>
+                <p class="introduction">
+                  メッセージ：<br />
+                  「飼い主さまにも動物たちにも、気持ちよく過ごしていただけるように。笑顔での“いってらっしゃい”と“おかえりなさい”を大切にしています。」
+                </p>
+              </li>
+
+              <li class="profile">
+                <img src="img/service-staff-5.png" alt="" />
+                <div class="text">
+                  <p class="name">西村 彩乃</p>
+                  <p class="rep">担当：トリマー／環境整備・雑務</p>
+                  <p class="qualification">資格：トリマーライセンス</p>
+                </div>
+                <p class="introduction">
+                  メッセージ：<br />
+                  「トリミングが苦手な子にも寄り添って、“また来てもいいかな”と思ってもらえるように。きれいにするだけじゃない時間を目指しています。」
+                </p>
+              </li>
+
+              <li class="profile">
+                <img src="img/service-staff-6.png" alt="" />
+                <div class="text">
+                  <p class="name">山本 千佳</p>
+                  <p class="rep">担当：受付／保護動物ケア／雑務全般</p>
+                  <p class="qualification">
+                    資格：保護犬・保護猫支援活動経験（団体所属歴あり）
+                  </p>
+                </div>
+                <p class="introduction">
+                  メッセージ：<br />
+                  「保護動物たちの“心のケア”にも意識を向けながら、日々の暮らしが少しでも明るくなるような関わりを心がけています。」
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------------------------------------------- -->
+
+      <!-- スタッフ募集------------------------------------------------ -->
+
+      <section id="job_offer" class="job_offer">
+        <!-- 背景ウェーブ -->
+        <svg
+          class="svg-top"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320">
+          <path
+            fill="#FFFDFA"
+            fill-opacity="1"
+            d="M0,96L48,90.7C96,85,192,75,288,96C384,117,480,171,576,192C672,213,768,203,864,192C960,181,1056,171,1152,176C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+        <!-- ---------- -->
+
+        <div class="container">
+          <div class="section-title">
+            <h2>私たちと一緒に働きませんか？</h2>
+            <p>
+              「この子たちのためにできることを」そんな想いを持つ方と、一緒に働けたら嬉しいです。
+            </p>
+          </div>
+
+          <div class="wrapper">
+            <h3>〜 現在募集中の職種 〜</h3>
+
+            <div class="accordion">
+              <div class="item">
+                <button class="title">
+                  動物看護師（正社員・パート） <span>＋</span>
+                </button>
+
+                <div class="content">
+                  <dl>
+                    <dt>業務内容</dt>
+                    <dd>
+                      診療補助、入院管理、受付業務、検査補助、ペットホテルケア
+                      など
+                    </dd>
+
+                    <dt>応募資格</dt>
+                    <dd>
+                      動物看護師統一認定資格 または 愛玩動物看護師資格所持者<br />
+                      <span>※未経験者・ブランクのある方も歓迎（丁寧に指導します）</span>
+                    </dd>
+
+                    <dt>勤務時間</dt>
+                    <dd>
+                      9:00～19:00 の間でシフト制（休憩あり）<br />
+                      <span>※パートの方は時間・曜日応相談</span>
+                    </dd>
+
+                    <dt>休日・休暇</dt>
+                    <dd>完全週休2日制、年末年始休暇、有給休暇</dd>
+
+                    <dt>給与</dt>
+                    <dd>
+                      正社員：月給20万円〜（経験・能力により優遇）<br />
+                      パート：時給1,100円〜1,500円
+                    </dd>
+
+                    <dt>昇給</dt>
+                    <dd>年１回</dd>
+
+                    <dt>加入保険</dt>
+                    <dd>健康保険・厚生年金保険・雇用保険・労災保険</dd>
+
+                    <dt>福利厚生</dt>
+                    <dd>
+                      <ul>
+                        <li>制服貸与</li>
+                        <li>交通費支給（上限あり）</li>
+                        <li>研修・勉強会費用補助</li>
+                        <li>スタッフ動物診療割引制度</li>
+                        <li>バイク・自転車通勤OK</li>
+                        <li>扶養内勤務OK（パート）</li>
+                        <li>正社員登用制度あり（パートからのキャリアアップも）</li>
+                        <li>保護活動への参加支援制度あり（任意参加）</li>
+                      </ul>
+                    </dd>
+                    
+                  </dl>
+                </div>
+              </div>
+
+              <div class="item">
+                <button class="title">
+                  トリマー（正社員・パート） <span>＋</span>
+                </button>
+
+                <div class="content">
+                  <dl>
+                    <dt>業務内容</dt>
+                    <dd>
+                      犬猫のトリミング全般、ペットホテルの補助業務、受付・保護のサポート業務
+                    </dd>
+
+                    <dt>応募資格</dt>
+                    <dd>
+                      トリマー資格保持者または実務経験者<br />
+                      <span>※未経験者は応相談</span>
+                    </dd>
+
+                    <dt>勤務時間</dt>
+                    <dd>
+                      正社員：9:00～19:00（休憩あり）<br />
+                      パート：9:00～19:00の間で応相談、週2日〜
+                    </dd>
+
+                    <dt>休日・休暇</dt>
+                    <dd>完全週休2日制、年末年始休暇、有給休暇</dd>
+
+                    <dt>給与</dt>
+                    <dd>
+                      正社員：月給20万円〜（経験・能力により優遇）<br />
+                      パート：時給1,100円〜1,500円
+                    </dd>
+
+                    <dt>昇給</dt>
+                    <dd>年１回</dd>
+
+                    <dt>加入保険</dt>
+                    <dd>健康保険・厚生年金保険・雇用保険・労災保険</dd>
+
+                    <dt>福利厚生</dt>
+                    <dd>
+                      <ul>
+                        <li>制服貸与</li>
+                        <li>交通費支給（上限あり）</li>
+                        <li>研修・勉強会費用補助</li>
+                        <li>スタッフ動物診療割引制度</li>
+                        <li>バイク・自転車通勤OK</li>
+                        <li>扶養内勤務OK（パート）</li>
+                        <li>正社員登用制度あり（パートからのキャリアアップも）</li>
+                        <li>保護活動への参加支援制度あり（任意参加）</li>
+                      </ul>
+                    </dd>
+
+                  </dl>
+                </div>
+              </div>
+
+              <div class="item">
+                <button class="title">
+                  受付・事務補助（正社員・パート） <span>＋</span>
+                </button>
+
+                <div class="content">
+                  <dl>
+                    <dt>業務内容</dt>
+                    <dd>
+                      受付対応、電話応対、会計処理、備品管理、清掃、ペットホテルの夜間対応スタッフ（24時間シフト制）も含む
+                    </dd>
+
+                    <dt>応募資格</dt>
+                    <dd>
+                      資格不問・未経験OK<br />
+                      動物好きで明るく丁寧な対応ができる方歓迎<br />
+                      <span>
+                        ※以下のいずれかの資格保持者は優遇<br />
+                        愛玩動物飼養管理士（1級・2級）・動物取扱責任者の資格要件を満たす方・ペットケアアドバイザー
+                        等
+                      </span>
+                    </dd>
+
+                    <dt>勤務時間</dt>
+                    <dd>
+                      正社員<br />
+                      ・早番 8:00〜17:00<span>(朝の散歩・受付・会計・予約対応・事務処理・日中ホテル業務)</span><br />
+                      ・中番 12:00〜21:00<span>(午後の受付・ペットのチェックイン／アウト・夕方の散歩など)</span><br />
+                      ・夜勤 21:00〜翌8:00<span>(ペットの見守り、事務作業、清掃など)</span><br />
+                      パート<br />
+                      ・シフト：時間応相談、週3日〜OK
+                    </dd>
+
+                    <dt>休日・休暇</dt>
+                    <dd>完全週休2日制、年末年始休暇、有給休暇</dd>
+
+                    <dt>給与</dt>
+                    <dd>
+                      正社員：月給17万円〜（経験・能力により優遇）<br />
+                      パート：時給1,000円〜1,300円<span>※夜勤手当あり（1回あたり3,000円）</span>
+                    </dd>
+
+                    <dt>昇給</dt>
+                    <dd>年１回</dd>
+
+                    <dt>加入保険</dt>
+                    <dd>健康保険・厚生年金保険・雇用保険・労災保険</dd>
+
+                    <dt>福利厚生</dt>
+                    <dd>
+                      <ul>
+                        <li>制服貸与</li>
+                        <li>交通費支給（上限あり）</li>
+                        <li>研修・勉強会費用補助</li>
+                        <li>スタッフ動物診療割引制度</li>
+                        <li>バイク・自転車通勤OK</li>
+                        <li>扶養内勤務OK（パート）</li>
+                        <li>正社員登用制度あり（パートからのキャリアアップも）</li>
+                        <li>保護活動への参加支援制度あり（任意参加）</li>
+                      </ul>
+                    </dd>
+                    
+                  </dl>
+                </div>
+              </div>
+            </div>
+
+            
+            <a href="entry.html" class="btn">応募する</a>
+          </div>
+        </div>
+
+        <!-- 背景ウェーブ -->
+        <svg
+          class="svg-bottom"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320">
+          <path
+            fill="#FFFDFA"
+            fill-opacity="1"
+            d="M0,96L48,90.7C96,85,192,75,288,96C384,117,480,171,576,192C672,213,768,203,864,192C960,181,1056,171,1152,176C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+        <!-- ---------- -->
+      </section>
+
+      <!-- ----------------------------------------------------------- -->
+    </main>
+
+    <footer>
+      <!-- 背景ウェーブ ------------------------------------------->
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <!-- 上の薄い波 -->
+          <path
+            fill="#DAE6D2"
+            fill-opacity=".7"
+            d="M0,160L80,138.7C160,117,320,75,480,85.3C640,96,800,160,960,202.7C1120,245,1280,267,1360,277.3L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+          <!-- 下の濃い波 -->
+          <path
+            fill="#DAE6D2"
+            fill-opacity="1"
+            d="M0,192L48,197.3C96,203,192,213,288,218.7C384,224,480,224,576,213.3C672,203,768,181,864,154.7C960,128,1056,96,1152,85.3C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+      <!-- ------------------------------------------------------- -->
+
+      <div class="container">
+        <a href="index.html" class="logo"><img src="img/logo.png" /></a>
+
+        <div class="footer-top">
+          <div class="info-left">
+            <div class="overview">
+              <h3>病院概要</h3>
+              <ul>
+                <li><a href="index.html#about">診療案内</a></li>
+                <li><a href="trimming.html">トリミング</a></li>
+                <li><a href="hotel.html">ペットホテル</a></li>
+                <li><a href="training.html">しつけ教室</a></li>
+                <li><a href="rescue.html">保護活動</a></li>
+                <li><a href="staff.html">スタッフ紹介</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+              </ul>
+            </div>
+
+            <div class="pey">
+              <h3>お支払い方法</h3>
+              <p>現金またはキャッシュレス決済</p>
+            </div>
+          </div>
+
+          <div class="info-right">
+            <div class="contact">
+              <h3>ご予約・お問い合わせ</h3>
+              <ul>
+                <li>
+                  <a href="tel:0000-00-0000">
+                    <img src="img/logo-phone.svg" alt="" />
+                    0000-00-0000
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <img src="img/logo-instagram.svg" alt="" />
+                    Instagram
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="img/logo-line.svg" alt="" />
+                    公式LINE
+                  </a>
+                  <p>※友だち追加して、いつでもご予約・お問い合わせOK！</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pay-insurance">
+              <div class="insurance">
+                <h3>取扱保険</h3>
+                <ul>
+                  <li>アニコム損害保険</li>
+                  <li>アイペット損害保険</li>
+                </ul>
+                <p>
+                  ※他の保険会社の場合は、飼い主様から直接、保険会社に請求いただきます。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="access">
+            <div class="access-inner">
+              <h3>アクセス</h3>
+
+              <div class="text">
+                <p class="address">
+                  〒799-1527<br />
+                  愛媛県今治市
+                </p>
+                <div class="text-inner">
+                  <img src="img/access-1.png" alt="" />
+                  <p class="car">駐車場10台完備</p>
+                </div>
+              </div>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26461.98548979339!2d133.00174055785976!3d33.99900123690735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35502fddd73428e1%3A0xc90e36833387efea!2z44CSNzk5LTE1Mjcg5oSb5aqb55yM5LuK5rK75biC6ZW35rKi!5e0!3m2!1sja!2sjp!4v1754034782455!5m2!1sja!2sjp"
+              width="600"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+
+          <div class="careers-link">
+            <p>小さな命に寄り添うお仕事、始めませんか？</p>
+            <a href="staff.html#job_offer" class="btn">採用情報はこちら</a>
+          </div>
+
+          <div class="support-link">
+            <p>小さな命を守るために、あなたの力を貸してください。</p>
+            <a href="support.html" class="btn">寄付のお願いはこちら</a>
+          </div>
+        </div>
+
+        <div class="to-top">
+          <div class="inner">
+            <img src="img/logo-paw.svg" alt="" />
+            <p>top</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>&copy;Mori no Doubutsu Hospital</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

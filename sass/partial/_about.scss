@@ -1,0 +1,332 @@
+@use "_mixin" as m;
+
+.about {
+  padding-top: m.$bottom;
+
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 1px 1px rgba(255, 255, 255, 1);
+    margin-bottom: m.$bottom-sp;
+
+    span {
+      display: block;
+      font-size: 0.88rem;
+      margin-top: 8px;
+    }
+  }
+
+  .service {
+    margin-block: m.$bottom;
+
+    .content {
+      position: relative;
+
+      h3 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+      }
+
+      .img {
+        width: 65%;
+        height: 600px;
+        object-fit: cover;
+        clip-path: polygon(0 0, 100% 0%, 66% 100%, 0% 100%);
+        z-index: -10;
+
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: 1s ease;
+
+        @include m.tab {
+          width: 80%;
+        }
+
+        &.active {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .items {
+        width: 40%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateY(-50%);
+
+        @include m.tab {
+          width: 80%;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+          left: 15%;
+        }
+
+        @include m.sp {
+          gap: 8px;
+          left: 10%;
+        }
+
+        .item {
+          max-width: 250px;
+          text-align: center;
+          background-color: m.$main-color;
+          border-radius: 20px;
+          box-shadow: m.$shadow;
+          transition: 0.5s ease;
+          padding: 16px;
+
+          &:hover {
+            background-color: darken(m.$main-color, 5%);
+            box-shadow: 0px 4px 8px 0px rgba(75, 75, 75, 0.45);
+          }
+          &:hover .text-1 {
+            width: 90%;
+          }
+
+          a {
+            width: 100%;
+
+            img {
+              width: 75px;
+
+              @include m.sp {
+                width: 50px;
+              }
+            }
+
+            .text-1 {
+              width: 95%;
+              border-top: 1px solid m.$font-color;
+              transition: 0.5s ease;
+              padding-top: 8px;
+              margin-top: 8px;
+              margin-inline: auto;
+            }
+
+            .text-2 {
+              font-size: 0.88rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .medical_care_subjects {
+    margin-bottom: m.$bottom;
+
+    .background {
+      background-image: url(../img/about-background.png);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      padding-block: m.$bottom-sp;
+
+      .subjects_pc {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+
+        @include m.tab {
+          // grid-template-columns: repeat(2,1fr);
+          display: none;
+        }
+
+        .item {
+          background-color: m.$base-color;
+          border-radius: 30px;
+          box-shadow: m.$shadow;
+          padding: 16px 24px;
+
+          dt {
+            border-bottom: 1px solid m.$font-color;
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+
+            img {
+              width: 20px;
+              vertical-align: bottom;
+            }
+          }
+
+          .detail {
+            margin-top: 8px;
+
+            li {
+              list-style: disc;
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+      .accordion {
+        display: none;
+
+        .item {
+          background-color: m.$base-color;
+          border: 0.5px solid m.$font-color;
+          border-radius: 30px;
+          box-shadow: m.$shadow;
+          padding: 24px;
+          margin-bottom: 16px;
+
+          .title {
+            width: 100%;
+            padding-bottom: 8px;
+            position: relative;
+
+            img {
+              width: 20px;
+              vertical-align: bottom;
+            }
+
+            span {
+              display: inline-block;
+              position: absolute;
+              right: 0;
+            }
+          }
+
+          .content {
+            width: 100%;
+            display: none;
+            border-top: 0.5px solid m.$font-color;
+            padding-top: 8px;
+
+            p {
+              width: 80%;
+              margin-bottom: 8px;
+              margin-inline: auto;
+            }
+
+            ul {
+              width: 80%;
+              margin-inline: auto;
+
+              li {
+                list-style: disc;
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+
+        @include m.tab {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .services {
+    margin-bottom: m.$bottom-sp;
+
+    p {
+      text-align: right;
+      margin-top: m.$bottom-sp;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      justify-items: center;
+      justify-content: center;
+
+      @include m.tab {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+      }
+
+      @include m.sp-450 {
+        grid-template-columns: repeat(1,1fr);
+      }
+
+      li {
+        width: 100%;
+        text-align: center;
+
+        @include m.tab {
+          width: 80%;
+        }
+
+        h4 {
+          font-size: 1.2rem;
+          margin-bottom: 20px;
+
+          @include m.tab {
+            font-size: 1rem;
+          }
+        }
+
+        .img-stack {
+          width: 100%;
+          aspect-ratio: 1/1;
+          position: relative;
+
+          @include m.sp-450 {
+              width: 200px;
+              height: 200px;
+              margin-inline: auto;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 5px solid m.$main-color;
+            box-shadow: m.$shadow;
+            border-radius: 50%;
+            object-fit: cover;
+            opacity: 0;
+            animation: fade 9s infinite;
+            margin-inline: auto;
+
+            @include m.sp-450 {
+              border-radius: 30px;
+            }
+
+            &:nth-child(1) {
+              animation-delay: 0s;
+            }
+
+            &:nth-child(2) {
+              animation-delay: 3s;
+            }
+
+            &:nth-child(3) {
+              animation-delay: 6s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}

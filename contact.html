@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mori no Doubutsu Hospital</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kiwi+Maru&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ress@4.0.0/dist/ress.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" />
+        </a>
+      </h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="index.html#about">診療案内</a></li>
+          <li><a href="trimming.html">トリミング</a></li>
+          <li><a href="hotel.html">ペットホテル</a></li>
+          <li><a href="training.html">ドッグトレーニング</a></li>
+          <li><a href="rescue.html">保護活動</a></li>
+          <li><a href="staff.html">スタッフ紹介</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><img src="img/logo-phone.svg" /></li>
+        </ul>
+      </nav>
+
+      <div class="toggle">
+        <p>MENU</p>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="mask"></div>
+    </header>
+
+    <main>
+      <!-- 応募フォーム------------------------------------------ -->
+
+      <div class="form contact_form container">
+        <div class="section-title">
+          <h2>お問い合わせフォーム</h2>
+        </div>
+
+        <form action="#">
+          <div class="group">
+            <label for="inquiry_type">お問い合わせ種別 <span>*</span></label>
+            <div class="input-area">
+              <select name="inquiry_type" id="inquiry_type">
+                <option value="">選択してください</option>
+                <option value="medical_care">診療の予約・相談</option>
+                <option value="trimming">トリミングの予約</option>
+                <option value="training">ドッグトレーニングの予約</option>
+                <option value="hotel">ペットホテルの予約</option>
+                <option value="rescue">保護動物について</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="group">
+            <label for="">お名前 <span>*</span></label>
+            <div class="input-area name">
+              <input type="text" name="lastname" placeholder="姓" required />
+              <input type="text" name="firstname" placeholder="名" required />
+            </div>
+          </div>
+
+          <div class="group">
+            <label for="">ふりがな <span>*</span></label>
+            <div class="input-area name">
+              <input
+                type="text"
+                name="lastname_kana"
+                placeholder="せい"
+                required />
+              <input
+                type="text"
+                name="firstname_kana"
+                placeholder="めい"
+                required />
+            </div>
+          </div>
+
+          <div class="group">
+            <label for="">どうぶつのお名前 <span>*</span></label>
+            <div class="input-area animal-name name">
+              <input
+                type="text"
+                name="lastname_kana"
+                placeholder="お名前"
+                required />
+            </div>
+          </div>
+
+          <div class="group">
+            <label for="">どうぶつの種類 <span>*</span></label>
+            <div class="input-area animal-type name">
+              <input
+                type="text"
+                name="lastname_kana"
+                placeholder="例：犬"
+                required />
+            </div>
+          </div>
+
+          <div class="group">
+            <label for="email">メールアドレス <span>*</span></label>
+            <div class="input-area">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="例：sample@mail.com"
+                required />
+            </div>
+          </div>
+
+          <div class="group">
+            <label for="phone">電話番号 <span>*</span></label>
+            <div class="input-area">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="例：090-1234-5678"
+                required />
+            </div>
+          </div>
+
+          <div class="group">
+            <label for="message">お問い合わせ内容 <span>*</span></label>
+            <div class="input-area">
+              <textarea id="message" name="message required"></textarea>
+            </div>
+          </div>
+
+        </form>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">送信する</button>
+        </div>
+
+        <a href="index.html" class="back">戻る<img src="img/back-logo.png" alt=""></a>
+      </div>
+
+      <!-- ----------------------------------------------------------- -->
+    </main>
+
+    <footer>
+      <!-- 背景ウェーブ ------------------------------------------->
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <!-- 上の薄い波 -->
+          <path
+            fill="#DAE6D2"
+            fill-opacity=".7"
+            d="M0,160L80,138.7C160,117,320,75,480,85.3C640,96,800,160,960,202.7C1120,245,1280,267,1360,277.3L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+          <!-- 下の濃い波 -->
+          <path
+            fill="#DAE6D2"
+            fill-opacity="1"
+            d="M0,192L48,197.3C96,203,192,213,288,218.7C384,224,480,224,576,213.3C672,203,768,181,864,154.7C960,128,1056,96,1152,85.3C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+      <!-- ------------------------------------------------------- -->
+
+      <div class="container">
+        <a href="index.html" class="logo"><img src="img/logo.png" /></a>
+
+        <div class="footer-top">
+          <div class="info-left">
+            <div class="overview">
+              <h3>病院概要</h3>
+              <ul>
+                <li><a href="index.html#about">診療案内</a></li>
+                <li><a href="trimming.html">トリミング</a></li>
+                <li><a href="hotel.html">ペットホテル</a></li>
+                <li><a href="training.html">しつけ教室</a></li>
+                <li><a href="rescue.html">保護活動</a></li>
+                <li><a href="staff.html">スタッフ紹介</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+              </ul>
+            </div>
+
+            <div class="pey">
+              <h3>お支払い方法</h3>
+              <p>現金またはキャッシュレス決済</p>
+            </div>
+          </div>
+
+          <div class="info-right">
+            <div class="contact">
+              <h3>ご予約・お問い合わせ</h3>
+              <ul>
+                <li>
+                  <a href="tel:0000-00-0000">
+                    <img src="img/logo-phone.svg" alt="" />
+                    0000-00-0000
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <img src="img/logo-instagram.svg" alt="" />
+                    Instagram
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="img/logo-line.svg" alt="" />
+                    公式LINE
+                  </a>
+                  <p>※友だち追加して、いつでもご予約・お問い合わせOK！</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pay-insurance">
+              <div class="insurance">
+                <h3>取扱保険</h3>
+                <ul>
+                  <li>アニコム損害保険</li>
+                  <li>アイペット損害保険</li>
+                </ul>
+                <p>
+                  ※他の保険会社の場合は、飼い主様から直接、保険会社に請求いただきます。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="access">
+            <div class="access-inner">
+              <h3>アクセス</h3>
+
+              <div class="text">
+                <p class="address">
+                  〒799-1527<br />
+                  愛媛県今治市
+                </p>
+                <div class="text-inner">
+                  <img src="img/access-1.png" alt="" />
+                  <p class="car">駐車場10台完備</p>
+                </div>
+              </div>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26461.98548979339!2d133.00174055785976!3d33.99900123690735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35502fddd73428e1%3A0xc90e36833387efea!2z44CSNzk5LTE1Mjcg5oSb5aqb55yM5LuK5rK75biC6ZW35rKi!5e0!3m2!1sja!2sjp!4v1754034782455!5m2!1sja!2sjp"
+              width="600"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="careers-link">
+            <p>小さな命に寄り添うお仕事、始めませんか？</p>
+            <a href="staff.html#job_offer" class="btn">採用情報はこちら</a>
+          </div>
+
+          <div class="support-link">
+            <p>小さな命を守るために、あなたの力を貸してください。</p>
+            <a href="support.html" class="btn">寄付のお願いはこちら</a>
+          </div>
+        </div>
+
+        <div class="to-top">
+          <div class="inner">
+            <img src="img/logo-paw.svg" alt="" />
+            <p>top</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>&copy;Mori no Doubutsu Hospital</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

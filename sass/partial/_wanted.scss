@@ -1,0 +1,118 @@
+@use '_mixin' as m;
+
+.wanted {
+  text-align: center;
+
+  .section-title {
+    text-align: left;
+  }
+  
+  .wanted-list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 32px;
+    margin-bottom: m.$bottom-sp;
+
+    @include m.tab {
+      grid-template-columns: repeat(1,1fr);
+      margin-bottom: 32px;
+    }
+
+    li {
+      width: 100%;
+      height: auto;
+      background-color: m.$main-color;
+      box-shadow: m.$shadow;
+      text-align: left;
+      display: flex;
+      align-items: center;
+
+      @include m.tab {
+        width: 80%;
+        margin-inline: auto;
+      }
+
+      @include m.sp-500 {
+        flex-direction: column;
+      }
+
+      .img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: m.$shadow;
+        transform: translateX(-50px);
+        transition: 1s ease;
+        opacity: 0;
+        border-radius: 0 50% 50% 0  ;
+
+        @include m.sp-500 {
+          width: 80%;
+          height: 80%;
+          transform: translateX(0) translateY(-50px);
+          border-radius: 0;
+        }
+
+        &.active {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      .text {
+        width: 50%;
+        padding: 16px;
+
+        @include m.sp-500 {
+          width: 100%;
+        }
+
+        p {
+          text-align: center;
+          margin-bottom: 16px;
+
+          span {
+            display: block;
+            border-bottom: .5px solid m.$font-color;
+            padding-bottom: 16px;
+          }
+        }
+
+        dl {
+          display: flex;
+          flex-wrap: wrap;
+  
+          dt {
+            width: 25%;
+          }
+          dd {
+            width: 75%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 保護動物一覧ページ-----------------------
+.wanted-page {
+  padding-top: 144px;
+  margin-bottom: m.$bottom-sp;
+  position: relative;
+
+  .back {
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    transition: .3s ease;
+
+    &:hover {
+      opacity: .8;
+    }
+    
+    img {
+      width: 13px;
+      margin-left: 5px;
+    }
+  }
+}

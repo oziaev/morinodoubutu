@@ -1,0 +1,73 @@
+@use '_mixin' as m;
+
+.support-fixed_page {
+  text-align: center;
+  margin-top: 128px;
+  margin-bottom: m.$bottom-sp;
+
+  .accordion {
+    display: flex;
+    justify-content: space-between;
+
+    @include m.tab {
+      flex-direction: column;
+    }
+
+    .item {
+      width: 400px;
+      margin-inline: auto;
+
+      @include m.tab {
+        margin-bottom: 16px;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @include m.sp-450 {
+        width: 270px;
+      }
+
+      .title {
+        width: 100%;
+        background-color: darken(m.$accent-color, 5);
+        transition: .3s ease;
+        position: relative;
+        padding-block: 8px;
+
+        &:hover {
+          background-color: darken(m.$accent-color, 10);
+        }
+
+        span {
+          display: inline-block;
+          position: absolute;
+          right: 20px;
+        }
+      }
+
+      .content {
+        width: 100%;
+        display: none;
+        background-color:lighten(m.$accent-color, 5);
+        padding-block: 16px;
+
+        .text {
+          width: 70%;
+          text-align: left;
+          margin-inline: auto;
+
+          p {
+            margin-bottom: 8px;
+          }
+          ul {
+            li {
+              list-style: disc inside;
+            }
+          }
+        }
+      }
+    }
+  }
+}

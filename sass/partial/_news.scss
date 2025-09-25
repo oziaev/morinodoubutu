@@ -1,0 +1,203 @@
+@use "_mixin" as m;
+
+// ニューストップページ-----------------------------------
+
+.news {
+  padding-block: m.$bottom-sp;
+  margin-bottom: m.$bottom-sp;
+
+  @include m.sp {
+    padding-block: 32px;
+  }
+  .post {
+    max-width: m.$sp;
+    background-color: m.$base-color;
+    border: 1px solid m.$font-color;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin-left: auto;
+
+    .item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 24px 32px;
+
+      @include m.tab {
+        flex-direction: column;
+        padding: 16px 24px 24px 24px;
+        margin-inline: auto;
+      }
+
+      .article {
+        .date {
+          margin-bottom: 8px;
+        }
+      }
+
+      .next {
+        width: auto;
+        align-self: center;
+        text-align: center;
+        font-size: 0.78rem;
+        margin-block: 24px 16px;
+        position: relative;
+
+        @include m.tab {
+          width: auto;
+          margin-inline: auto;
+          margin-block: 24px 16px;
+        }
+
+        &::before {
+          width: 80%;
+          height: 1px;
+          background-color: m.$font-color;
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          transition: 0.5s ease;
+        }
+
+        &::after {
+          width: 1px;
+          height: 10px;
+          background-color: m.$font-color;
+          transform: rotate(45deg);
+          content: "";
+          position: absolute;
+          left: 77%;
+          bottom: -18px;
+          transition: 0.5s ease;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: darken(m.$base-color, 5);
+
+      .next::before {
+        width: 100%;
+      }
+
+      .next::after {
+        left: 97%;
+      }
+    }
+  }
+}
+
+// ニュース一覧ページ--------------------------------------------
+
+.news_list {
+  padding-top: 144px;
+
+  .container {
+    .post {
+      margin-inline: auto;
+      margin-bottom: 24px;
+
+      .item {
+        .article {
+          width: 40%;
+          
+          @include m.tab {
+            width: 80%;
+            margin-bottom: 16px;
+          }
+        }
+
+        .blog-img {
+          width: 40%;
+          height: 200px;
+          object-fit: cover;
+          border: 2px solid m.$main-color;
+          border-radius: 30px;
+
+          @include m.tab {
+            width: 60%;
+            height: 300px;
+          }
+
+          @include m.sp {
+            width: 80%;
+            height: 150px;
+          }
+        }
+
+        .next {
+          &::after {
+            left: 75%;
+          }
+        }
+      }
+      
+      &:hover {
+        .next::after {
+          left: 95%;
+        }
+      }
+
+    }
+  }
+}
+
+// シングルページ--------------------------------
+.single {
+  max-width: m.$sp;
+  background-color: m.$base-color;
+  border: 1px solid m.$font-color;
+  border-radius: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  padding: 32px m.$bottom-sp m.$bottom m.$bottom-sp;
+  margin-inline: auto;
+  position: relative;
+
+  @include m.sp {
+    padding: 32px 32px 40px 32px;
+  }
+
+  .article {
+    text-align: left;
+    margin-bottom: 24px;
+
+    .date {
+      margin-bottom: 8px;
+    }
+
+    .title {
+      margin-bottom: 16px;
+    }
+  }
+
+  .blog-img {
+    width: 80%;
+    border: 2px solid m.$main-color;
+    border-radius: 30px;
+
+    @include m.sp {
+      width: 100%;
+    }
+  }
+  .back {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    transition: .3s ease;
+
+    @include m.sp {
+      bottom: 10px;
+    }
+
+    &:hover {
+      opacity: .8;
+    }
+
+    img {
+      width: 13px;
+      margin-left: 5px;
+    }
+  }
+}

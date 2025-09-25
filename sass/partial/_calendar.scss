@@ -1,0 +1,27 @@
+@use '_mixin' as m;
+
+.calendar {
+  position: relative;
+  // margin-bottom: m.$bottom;
+
+  .holiday-titles {
+    margin-bottom: m.$bottom;
+  }
+
+  .wave {
+    width: 100%;
+    position: absolute;
+    // left: 0;
+    // right: 0;
+    bottom: -96px;
+    margin: 0;
+    padding: 0;
+    z-index: -99;
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+}

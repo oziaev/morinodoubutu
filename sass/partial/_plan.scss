@@ -1,0 +1,265 @@
+@use "_mixin" as m;
+
+// ホテル・トリミング・トレーニング・保護活動------------------
+// 全共通
+.plan {
+  margin-block: m.$bottom;
+
+  @include m.sp {
+    margin-block: m.$bottom-sp;
+  }
+
+  .content {
+    position: relative;
+
+      &::before {
+        width: 30%;
+        height: 0.5px;
+        content: "";
+        position: absolute;
+        top: 300px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        background-color: m.$font-color;
+        z-index: -10;
+
+        @include m.sp {
+          display: none;
+        }
+      }
+
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+
+      .text {
+        width: 45%;
+
+        @include m.sp {
+          width: 100%;
+          border: 0.5px solid m.$font-color;
+          border-radius: 30px;
+          padding: 16px 24px;
+        }
+
+        table {
+          border-collapse: collapse;
+          text-align: center;
+          margin-inline: auto;
+          margin-bottom: 16px;
+          padding: 8px;
+
+
+          tr {
+            &:last-child td {
+              border-bottom: none;
+            }
+
+            th,
+            td {
+              border-bottom: 0.5px solid m.$font-color;
+              border-right: 0.5px solid m.$font-color;
+              padding: 8px;
+
+              &:last-child {
+                border-right: none;
+              }
+            }
+          }
+        }
+      }
+
+      .supplement {
+        width: 80%;
+        font-size: 0.78rem;
+        margin-inline: auto;
+
+        li {
+          list-style-type: disc;
+          list-style-position: inside;
+        }
+      }
+
+      .img {
+        object-fit: cover;
+        width: 50%;
+        height: 300px;
+        opacity: 0;
+        box-shadow: m.$shadow;
+        transition: 1s ease;
+
+        @include m.sp {
+          width: 100%;
+          margin-bottom: 40px;
+        }
+
+        &.active {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    }
+    .left {
+
+      @include m.sp {
+        flex-direction: column;
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .img {
+        border-radius: 0 200px 200px 0;
+        transform: translateX(-100px);
+      }
+    }
+    .right {
+      @include m.sp {
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+      }
+
+      .img {
+        border-radius: 200px 0 0 200px;
+        transform: translateX(100px);
+      }
+    }
+  }
+}
+// -----------------------------------------------
+
+// ホテル・保護活動---------------------------------
+// 共通
+.hotel,
+.rescue,
+.training {
+  .plan {
+    .content {
+      position: relative;
+
+      &::after {
+        width: 30%;
+        height: 0.5px;
+        content: "";
+        position: absolute;
+        top: 616px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-45deg);
+        background-color: m.$font-color;
+        z-index: -10;
+
+        @include m.sp {
+          display: none;
+        }
+      }
+    }
+  }
+}
+// --------------------------------------------------
+
+// ホテル・トリミング----------------------------------
+// 共通 table部分
+.hotel,
+.trimming {
+  .plan {
+    .content {
+      .item {
+        .text {
+          table {
+            width: 80%;
+
+            @include m.sp {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// --------------------------------------------------
+
+// トレーニング----------------------------------------
+.training {
+  .plan {
+    .left {
+      position: relative;
+
+      &::before {
+        width: 30%;
+        height: 0.5px;
+        content: "";
+        position: absolute;
+        top: 300px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        background-color: m.$font-color;
+        z-index: -10;
+
+        @include m.sp {
+          display: none;
+        }
+      }
+    }
+
+    .text {
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 24px;
+
+        span {
+          display: inline-block;
+          font-size: 0.88rem;
+        }
+      }
+
+      table {
+        .con {
+          width: 70%;
+        }
+
+        .fee {
+          width: 30%;
+        }
+
+        td {
+          ul {
+            li {
+              text-align: left;
+              list-style-type: disc;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// --------------------------------------------------
+
+// 保護活動--------------------------------------------
+// text部分
+.rescue {
+  .work {
+    .content {
+      .text {
+        .inner-1 {
+          width: 80%;
+          font-size: 1.2rem;
+          margin-inline: auto;
+          margin-bottom: 8px;
+        }
+        .inner-2 {
+          width: 80%;
+          margin-inline: auto;
+        }
+      }
+    }
+  }
+}
+// ---------------------------------------------------

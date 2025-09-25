@@ -1,0 +1,176 @@
+@use "_mixin" as m;
+
+.staff {
+  padding-top: 144px;
+  margin-bottom: m.$bottom;
+
+  h2 {
+    margin-bottom: m.$bottom-sp;
+
+    @include m.tab {
+      margin-bottom: 0;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: m.$bottom-sp;
+  }
+
+  .doctors {
+    .doctor {
+      display: flex;
+      align-items: center;
+      margin-bottom: m.$bottom-sp;
+
+      img {
+        width: 50%;
+        box-shadow: m.$shadow;
+        object-fit: cover;
+
+        @include m.tab {
+          width: 70%;
+          align-items: flex-start;
+        }
+      }
+
+      .profile {
+        width: 50%;
+        padding: 32px;
+
+        @include m.tab {
+          width: 100%;
+        }
+
+        .name {
+          font-size: 1.3rem;
+          margin-bottom: 8px;
+        }
+
+        .subjects {
+          border-bottom: .5px solid m.$font-color;
+          padding-bottom: 16px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    .doctor-left {
+      .img {
+        transition: 1s ease;
+        transform: translateX(-50px);
+        opacity: 0;
+
+        &.active {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      
+      @include m.tab {
+        flex-direction: column;
+      }
+    }
+
+    .doctor-right {
+      .img {
+        transition: 1s ease;
+        transform: translateX(50px);
+        opacity: 0;
+
+        &.active {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      @include m.tab {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  .medical-staff,
+  .service-staff {
+    margin-top: m.$bottom;
+
+    @include m.tab {
+      margin-top: m.$bottom-sp;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    .staff-slider {
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+
+      .slick-dots {
+        li {
+          button {
+            &:before {
+              position: absolute;
+              bottom: 0;
+            }
+          }
+        }
+      } 
+
+      .profile {
+        max-width: 370px;
+        height: auto;
+        background-color: lighten(m.$main-color, 2);
+        box-shadow: m.$shadow;
+        padding: 24px;
+        margin-bottom: 34px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include m.sp {
+          max-width: 90%;
+        }
+
+        img {
+          height: 50%;
+          object-fit: cover;
+          box-shadow: m.$shadow;
+          margin-bottom: 16px;
+        }
+
+        .name {
+          font-size: 1.2rem;
+          margin-bottom: 16px;
+        }
+
+        .rep {
+          margin-bottom: 8px;
+        }
+        .qualification {
+          margin-bottom: 16px;
+        }
+      }
+
+      .slick-slide {
+        opacity: .2;
+        transition: opacity .3s ease;
+        margin-inline: 15px;
+      }
+
+      .slick-active {
+        opacity: 1;
+      }
+
+      .slick-prev,
+      .slick-next {
+        &::before {
+          font-size: 2rem;
+          color: m.$main-color;
+        }
+      }
+    }
+  }
+}
